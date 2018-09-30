@@ -1545,6 +1545,8 @@ describe("IsEmail", function() {
         , "\"foobar\"@example.com"
         , "\"  foo  m端ller \"@example.com"
         , "\"foo\\@bar\"@example.com"
+        , "test+ext@gmail.com"
+        , "some.name.midd.leNa.me.+extension@GoogleMail.com"
     ];
     const invalidValues = [
         null
@@ -1556,8 +1558,6 @@ describe("IsEmail", function() {
         , "somename@ｇｍａｉｌ.com"
         , "foo@bar.co.uk."
         , "z@co.c"
-        , "test+ext@gmail.com"
-        , "some.name.midd.leNa.me.+extension@GoogleMail.com"
         , "gmail...ignores...dots...@gmail.com"
         , "ｇｍａｉｌｇｍａｉｌｇｍａｉｌｇｍａｉｌｇｍａｉｌ@gmail.com"
     ];
